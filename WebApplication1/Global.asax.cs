@@ -23,7 +23,7 @@ namespace WebApplication1
 
             IConfigurationSource configurationSource = ConfigurationSourceFactory.Create();
             DatabaseFactory.SetDatabaseProviderFactory(new DatabaseProviderFactory());
-            ExceptionPolicy.SetExceptionManager(new ExceptionPolicyFactory(configurationSource).CreateManager());
+            //ExceptionPolicy.SetExceptionManager(new ExceptionPolicyFactory(configurationSource).CreateManager());
         }
 
         protected void Session_Start(object sender, EventArgs e)
